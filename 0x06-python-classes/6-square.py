@@ -44,6 +44,7 @@ class Square:
                     print("_" * self.__position[0], end='')
                 for j in range(0, self.__size):
                     print("#", end='')
+                print("")
               
 
     @property
