@@ -33,19 +33,16 @@ class Square:
         return self.__size ** 2
 
     def my_print(self):
-        if self.__size == 0:
+        if self.__size <= 0:
             print()
         if self.size > 0:
             if self.position[1] > 0:
                 for i in range (self.__position[1]):  
                    print('')
             for i in range(0, self.__size):
-                if (self.__position[0] > 0) and (type(self.__position[0]) == 'int'):
-                    print("_" * self.__position[0], end='')
                 for j in range(0, self.__size):
                     print("#", end='')
-                print("")
-              
+                print()             
 
     @property
     def position(self):
